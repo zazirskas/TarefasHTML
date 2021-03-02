@@ -1,0 +1,489 @@
+html {
+	font-family: "AUTHENTICSans-60", system-ui, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+		"Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+	font-weight: normal;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+div.logo-container {
+	width: 258px;
+}
+
+div.logo-container > a > img {
+	width: 258px;
+	height: 50px;
+	align-self: center;
+}
+
+div.header-container {
+	display: flex;
+	height: 74px;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: nowrap;
+	position: fixed;
+	background-color: white;
+	width: 100vw;
+}
+
+ul.header-links {
+	display: flex;
+	flex: auto;
+	list-style: none;
+	margin: 0 0 0 0;
+	flex-wrap: nowrap;
+	width: 100%;
+	height: 100%;
+}
+
+ul.header-links li {
+}
+
+button.button-header-link {
+	padding: 25px 25px 25px 25px;
+	margin: 0 0 0 0;
+	border-style: none;
+	box-shadow: none;
+	background-color: transparent;
+	font-size: 1.1rem;
+	font-weight: 500;
+	align-self: center;
+	font-family: "AUTHENTICSans-90", system-ui, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+		"Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+}
+
+nav.header-menu {
+	display: flex;
+	width: 57vw;
+	height: auto;
+	align-items: center;
+	/* position: fixed; */
+}
+
+ul.header-buttons li {
+	height: 32px;
+	width: 88px;
+	padding: 0px 0px 0 30px;
+}
+
+ul.header-buttons li.space-light-button {
+	padding-left: 15px;
+}
+
+ul.header-buttons li a {
+	padding: 8px 30px 8px 8px;
+	margin: 0 0 0px 0px;
+	display: flex;
+	text-decoration: none;
+	cursor: pointer;
+	transition: 0.3s;
+	transition-timing-function: ease-out;
+}
+
+ul.header-buttons li a:hover {
+	box-shadow: rgb(230, 221, 248) 5px 5px 0px 0px;
+}
+
+ul.header-buttons li a.header-button-dark {
+	background-color: #3432ff;
+	color: #ffffff;
+}
+
+ul.header-buttons li a.header-button-dark:hover {
+	background-color: #3432ff;
+	color: #ffffff;
+	background-color: rgb(14, 14, 118);
+}
+
+ul.header-buttons li a.header-button-light {
+	background-color: white;
+	color: rgb(51, 51, 255);
+	width: 83px;
+	border: 1px solid;
+	padding: 8px 30px 8px 8px;
+}
+
+ul.header-buttons li a.header-button-light:hover {
+	color: rgb(14, 14, 118);
+}
+
+div ul.header-buttons li a span {
+	padding: 8 8px 8px 8px;
+	margin: 0 0 0px 0px;
+	font-family: SometypeMono-Medium, Monaco, Inconsolata, "Fira Mono",
+		"Droid Sans Mono", "Source Code Pro", monospace, monospace;
+	font-size: 11px;
+	font-weight: 600;
+}
+
+div.container-header-buttons ul {
+	display: flex;
+	height: 32px;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	list-style: none;
+	padding: 0 0 0 0px;
+	margin: 0 0 0 0;
+}
+
+div.container-header-buttons {
+	display: flex;
+}
+
+ul.header-buttons {
+}
+
+div.hero-heading {
+	margin-bottom: 64px;
+}
+
+div.hero-heading h2 {
+	font-size: 56px;
+	font-family: AUTHENTICSans-90, system-ui, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+		"Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+	/* height: 204px; */
+	/* width: 607.5px; */
+	margin: 0 0 0 0;
+}
+
+div.hero-heading strong {
+	font-size: 56px;
+	font-family: AUTHENTICSans-90, system-ui, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+		"Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+	font-weight: normal;
+	line-height: 68px;
+}
+
+section.hero-content {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	height: 204px;
+	width: 607.5px;
+}
+
+div.hero-heading2 h2 {
+	font-size: 24px;
+	font-family: AUTHENTICSans-60, system-ui, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+		"Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+
+ul.hero-content-list {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	padding: 0 0 0 0;
+}
+
+ul.hero-content-list > li {
+	margin-right: 32px;
+}
+
+a.default-button-dark {
+	text-decoration: none;
+	background-color: #33f;
+	color: #fff;
+	font-family: SometypeMono-Medium, Monaco, Inconsolata, "Fira Mono",
+		"Droid Sans Mono", "Source Code Pro", monospace, monospace;
+	padding: 16px 54px 16px 16px;
+	cursor: pointer;
+	display: inline-block;
+	transition: 0.3s;
+}
+
+a.default-button-dark:hover {
+	background-color: #0e0e76;
+	box-shadow: rgb(230, 221, 248) 5px 5px 0px 0px;
+}
+
+a.default-button-light {
+	text-decoration: none;
+	color: #33f;
+	border-color: #33f;
+	border: 1px solid;
+	padding: 16px 54px 13px 16px;
+	cursor: pointer;
+	display: inline-block;
+	transition: 0.3s;
+}
+
+a.default-button-light:hover {
+	color: #0e0e76;
+	box-shadow: rgb(230, 221, 248) 5px 5px 0px 0px;
+}
+
+.default-button-light > span {
+	font-family: SometypeMono-Medium, Monaco, Inconsolata, "Fira Mono",
+		"Droid Sans Mono", "Source Code Pro", monospace, monospace;
+}
+
+.default-button-dark > span {
+	font-family: SometypeMono-Medium, Monaco, Inconsolata, "Fira Mono",
+		"Droid Sans Mono", "Source Code Pro", monospace, monospace;
+}
+
+.default-button-light p {
+	margin: 5px 0 0px 0;
+}
+
+/* Cor roxo escuro : #0e0e76 */
+
+.default-button-dark p {
+	margin: 4px 0 0 0;
+}
+
+div.hero-content-bottom {
+	display: block;
+	box-sizing: border-box;
+}
+
+div.container {
+	padding: 0px 64px;
+}
+
+section.logos {
+	margin: 160px 0 0 0;
+}
+
+div.layout-logos {
+	margin-top: 100px;
+}
+
+div.layout-logos-header-container {
+	text-align: center;
+	margin: 0 auto;
+}
+
+div.header-logos h2 {
+	font-size: 40px;
+	line-height: 48px;
+	font-style: normal;
+	font-weight: normal;
+}
+
+ul.logos-container {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0 auto;
+	padding: 0 40px 0 40px;
+	justify-content: center;
+}
+
+li.logo-item {
+	margin: 1.7777777778rem;
+}
+
+img.logo__icon {
+	margin: 0 auto;
+	object-fit: contain;
+	width: 100%;
+	width: 162px;
+	height: 45px;
+}
+
+div.layout-container-header-foursquare-solutions {
+	display: flex;
+}
+
+div.foursquare-solutions-header-content {
+	max-width: 983px;
+}
+
+p.section-caption {
+	font-family: SometypeMono-Regular, Monaco, Inconsolata, "Fira Mono",
+		"Droid Sans Mono", "Source Code Pro", monospace, monospace;
+	font-weight: normal;
+	line-height: 24px;
+	margin: 0 0 32px 0;
+}
+
+div.foursquare-solutions-header-heading {
+	font-size: 3.1111111111rem;
+	letter-spacing: -0.02em;
+	line-height: 3.7777777778rem;
+}
+
+div.foursquare-solutions-header-heading h2 {
+	font-family: AUTHENTICSans-60, system-ui, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+		"Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+	font-weight: 300;
+	max-height: 983px;
+	font-size: 56px;
+}
+
+section.header-foursquare-solutions {
+	margin: 160px 0 64px 0;
+}
+
+div.layout-container-foursquare-solutions {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100%;
+	width: 100%;
+}
+
+section.stacked {
+	display: flex;
+	flex-direction: row;
+	margin: 0 0;
+	position: relative;
+	height: 571px;
+	width: 1309px;
+}
+
+div.stacked-layout {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: reverse;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 100px;
+}
+
+div.stacked-layout2 {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	margin-top: 100px;
+}
+
+div.img-stacked {
+	flex: flex;
+	flex-wrap: wrap;
+	width: 47%;
+	height: 100%;
+}
+
+div.img-stacked picture img {
+	object-position: center;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	position: relative;
+}
+
+article.text-block-stacked1 {
+	max-width: 500px;
+	height: 443px;
+	padding: 64px 0px;
+	margin-left: 100px;
+	z-index: -1;
+}
+
+article.text-block-stacked2 {
+	max-width: 500px;
+	height: 443px;
+	padding: 64px 0px;
+	z-index: -1;
+}
+
+div.text-block-heading > h3 {
+	display: block;
+	font-size: 40px;
+	font-family: AUTHENTICSans-60, system-ui, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+		"Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+	font-weight: 300;
+	margin: 0;
+}
+
+div.text-block-body {
+	display: block;
+	font-family: AUTHENTICSans-90, system-ui, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+		"Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+ul.inline-list {
+	list-style: none;
+	display: flex;
+	width: 500px;
+	height: 51px;
+	margin: 24px 0 0 0;
+	padding-left: 0px;
+}
+
+ul.inline-list > li {
+	margin-right: 32px;
+}
+
+a.link_text {
+	color: rgb(51, 51, 255);
+	font-family: SometypeMono-Medium, Monaco, Inconsolata, "Fira Mono",
+		"Droid Sans Mono", "Source Code Pro", monospace, monospace;
+	text-decoration: none;
+}
+
+section.foursquare-solutions {
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+section.caixa-azul {
+	margin-top: 250px;
+}
+
+div.layout-caixa-azul {
+	background-color: #3333ff;
+	padding: 32px;
+}
+
+div.heading-caixa-azul > h2 {
+	color: #fff;
+	font-family: AUTHENTICSans-60, system-ui, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+		"Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+	font-size: 40px;
+	font-weight: 300;
+	box-sizing: border-box;
+	margin: 0;
+	max-width: 850.25px;
+	max-height: 94px;
+}
+
+a.default-button {
+	text-decoration: none;
+	border: 1px solid;
+	padding: 16px 54px 13px 16px;
+	cursor: pointer;
+	display: inline-block;
+	transition: 0.3s;
+}
+a.default-button:hover {
+	color: #0e0e76;
+	box-shadow: rgb(230, 221, 248) 5px 5px 0px 0px;
+}
+
+.default-button > span {
+	font-family: SometypeMono-Medium, Monaco, Inconsolata, "Fira Mono",
+		"Droid Sans Mono", "Source Code Pro", monospace, monospace;
+}
+
+ul.button-caixa-azul {
+	padding-left: 0px;
+	margin-top: 75px;
+}
