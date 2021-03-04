@@ -42,8 +42,8 @@ ul.header-links {
 	height: 100%;
 }
 
-ul.header-links li {
-}
+/* ul.header-links li {
+} */
 
 button.button-header-link {
 	padding: 25px 25px 25px 25px;
@@ -58,6 +58,14 @@ button.button-header-link {
 		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
 		"Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
 }
+
+button.button-header-link:hover {
+	border-bottom: 3px #3432FF solid;
+	transition: border-bottom .3s ease-in-out;
+	border
+
+}
+
 
 nav.header-menu {
 	display: flex;
@@ -137,8 +145,8 @@ div.container-header-buttons {
 	display: flex;
 }
 
-ul.header-buttons {
-}
+/* ul.header-buttons {
+} */
 
 div.hero-heading {
 	margin-bottom: 64px;
@@ -342,8 +350,8 @@ section.stacked {
 	flex-direction: row;
 	margin: 0 0;
 	position: relative;
-	height: 571px;
-	width: 1309px;
+	height: 100%;
+	width: 100%;
 }
 
 div.stacked-layout {
@@ -358,7 +366,7 @@ div.stacked-layout {
 div.stacked-layout2 {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
+	flex-direction: row-reverse;
 	justify-content: space-between;
 	width: 100%;
 	height: 100%;
@@ -368,8 +376,10 @@ div.stacked-layout2 {
 div.img-stacked {
 	flex: flex;
 	flex-wrap: wrap;
-	width: 47%;
-	height: 100%;
+	width: 608px;
+	height: 571px;
+	min-height: 374px;
+	min-width: 554px;
 }
 
 div.img-stacked picture img {
@@ -512,11 +522,13 @@ section.carousel {
 	margin-top: 64px;
 	padding: 64px 0px 160px 0px;
 	background-color: rgb(250, 248, 248);
+
 }
 
 div.places-layout {
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	/* justify-content: space-between; */
 }
 
 div.places-selector {
@@ -616,6 +628,7 @@ p.app-call-text > a:hover {
 
 div.places-list {
 	padding-top: 64px;
+	max-width: 864px;
 }
 
 div.flickity-viewport {
@@ -760,35 +773,48 @@ div.superfeature-content {
 	position: absolute;
 	top: 31%;
 	padding: 24px 32px 64px 96px;
-	width: 725px;
-	height: 184px;
+	max-width: 725px;
+	max-height: 184px;
 }
 
-p.superfeature-caption{
+p.superfeature-caption {
 	color: #fff;
 	margin-bottom: 16px;
 }
 
-a.superfeature-link > h2{
+a.superfeature-link > h2 {
 	box-shadow: inset 0 -15px 0 0 #33f;
 	display: inline;
 	line-height: 1.3;
 	font-size: 57px;
 	color: #fff;
 	font-weight: 500;
-	transition: box-shadow .2s ease-in;
-	transition: .2s ease-in;
+	transition: box-shadow 0.2s ease-in;
+	transition: 0.2s ease-in;
 }
 
-a.superfeature-link{
+a.superfeature-link {
 	text-decoration: none;
 	width: 724px;
 	height: 144px;
 }
 
-a.superfeature-link:hover{
+a.superfeature-link:hover {
 	text-decoration: none;
 	box-shadow: inset 0 -15px 0px 0px #33f;
-	transition: box-shadow .2s ease-in;
+	transition: box-shadow 0.2s ease-in;
 	border-width: 200px;
+}
+
+section.learn-more {
+	margin-top: 150px;
+}
+
+section.learn-more h2 {
+	font-family: AUTHENTICSans-60, system-ui, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+		"Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+	font-size: 40px;
+	margin-top: 0px;
+	font-weight: 300;
 }
