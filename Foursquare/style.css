@@ -527,7 +527,6 @@ section.carousel {
 div.places-layout {
 	display: flex;
 	flex-wrap: wrap;
-	/* justify-content: space-between; */
 }
 
 div.places-selector {
@@ -645,7 +644,6 @@ div.flickity-slider {
 }
 
 article.places-list-item {
-	/* position: absolute; */
 	left: 0%;
 	display: flex;
 	min-height: 100%;
