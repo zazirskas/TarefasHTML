@@ -58,6 +58,14 @@ ul.header-links {
   height: 100%;
 }
 
+li.dropdown:hover button.button-header-link {
+  display: block;
+  position: relative;
+  border-bottom: 3px #3432ff solid;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
+}
+
 li.dropdown:hover .dropdown-menu {
   opacity: 1;
   -webkit-transition: opacity 0.2s ease-in-out;
@@ -76,10 +84,6 @@ div.dropdown-menu {
   opacity: 0;
   width: 100%;
   pointer-events: none;
-}
-
-div.dropdown-menu:active {
-  display: none;
 }
 
 div.dropdown-menu aside.dropdown-aside {
@@ -163,6 +167,9 @@ a.flex-link:hover {
   color: #3432ff;
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
+  border-left: #3432ff 2px solid;
+  -webkit-transition: border-left .2s;
+  transition: border-left .2s;
 }
 
 a.flex-link i {

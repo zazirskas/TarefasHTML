@@ -14,7 +14,6 @@ a {
 	text-decoration: none;
 }
 
-
 div.logo-container {
 	width: 258px;
 }
@@ -49,6 +48,12 @@ ul.header-links {
 
 li.dropdown {
 	&:hover {
+		button.button-header-link {
+			display: block;
+			position: relative;
+			border-bottom: 3px #3432ff solid;
+			transition: border-bottom 0.2s;
+		}
 		.dropdown-menu {
 			opacity: 1;
 			transition: opacity 0.2s ease-in-out;
@@ -64,13 +69,8 @@ div.dropdown-menu {
 	top: 74px;
 	left: 0px;
 	opacity: 0;
-	// height: 100px;
 	width: 100%;
 	pointer-events: none;
-
-	&:active {
-		display: none;
-	}
 
 	aside.dropdown-aside {
 		background-color: #faf8f8;
@@ -130,10 +130,13 @@ a.flex-link {
 	padding-left: 40px;
 	color: #000;
 	margin-bottom: 20px;
+	
 
 	&:hover {
 		color: #3432ff;
 		transition: color 0.2s ease-in-out;
+		border-left: #3432ff 2px solid;
+		transition: border-left .2s;
 	}
 
 	i {
