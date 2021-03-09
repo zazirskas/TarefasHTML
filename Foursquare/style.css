@@ -1,817 +1,1067 @@
 html {
-	font-family: "AUTHENTICSans-60", system-ui, -apple-system, BlinkMacSystemFont,
-		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
-		"Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
-	font-weight: normal;
+  font-family: "AUTHENTICSans-60", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+  font-weight: normal;
 }
 
 ul,
 ol {
-	list-style: none;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 div.logo-container {
-	width: 258px;
+  width: 258px;
 }
 
 div.logo-container > a > img {
-	width: 258px;
-	height: 50px;
-	align-self: center;
+  width: 258px;
+  height: 50px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 div.header-container {
-	display: flex;
-	height: 74px;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: nowrap;
-	position: fixed;
-	background-color: #fff;
-	width: 100vw;
-	z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 74px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: fixed;
+  background-color: #fff;
+  width: 100vw;
+  z-index: 100;
 }
 
 ul.header-links {
-	display: flex;
-	flex: auto;
-	list-style: none;
-	margin: 0 0 0 0;
-	flex-wrap: nowrap;
-	width: 100%;
-	height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  list-style: none;
+  margin: 0 0 0 0;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  height: 100%;
 }
 
-/* ul.header-links li {
-} */
+li.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  pointer-events: all;
+}
+
+div.dropdown-menu {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 74px;
+  left: 0px;
+  opacity: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+div.dropdown-menu:active {
+  display: none;
+}
+
+div.dropdown-menu aside.dropdown-aside {
+  background-color: #faf8f8;
+  width: 479px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.33%;
+          flex: 0 1 33.33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 32px 53px;
+}
+
+div.dropdown-menu p {
+  margin-bottom: 24px;
+}
+
+div.dropdown-menu ul.subnav-aside-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+}
+
+div.dropdown-menu ul.subnav-aside-top li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 350px;
+  height: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000;
+}
+
+div.dropdown-menu ul.subnav-aside-top li a:hover {
+  color: #3432ff;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+div.dropdown-menu ul.subnav-aside-top li a img {
+  margin-right: 15px;
+}
+
+div.dropdown-menu ul {
+  padding: 0;
+}
+
+div.dropdown-menu ul.subnav-aside-bottom {
+  margin-top: 64px;
+}
+
+div.dropdown-menu li {
+  margin-top: 10px;
+}
+
+a.flex-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 40px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+a.flex-link:hover {
+  color: #3432ff;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+a.flex-link i {
+  font-size: 20px;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+a.flex-link .link-header {
+  margin: 0px 0px 10px 0px;
+  font-size: 20px;
+}
+
+a.flex-link .link-subcaption {
+  margin: 0px;
+  font-size: 13px;
+}
+
+div.dropdown-links {
+  width: 959px;
+}
+
+div.dropdown-links p.section-caption {
+  margin: 30px 0px 24px 0px;
+  padding-left: 32px;
+}
+
+div.subnav-main {
+  padding: 0px 32px 32px 0px;
+  height: 80%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.subnav-img {
+  width: 373px;
+  height: 210px;
+}
 
 button.button-header-link {
-	padding: 25px 25px 25px 25px;
-	margin: 0 0 0 0;
-	border-style: none;
-	box-shadow: none;
-	background-color: transparent;
-	font-size: 1.1rem;
-	font-weight: 500;
-	align-self: center;
-	font-family: "AUTHENTICSans-90", system-ui, -apple-system, BlinkMacSystemFont,
-		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
-		"Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+  display: block;
+  padding: 25px 25px 25px 25px;
+  margin: 0 0 0 0;
+  border-style: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  font-size: 1.1rem;
+  font-weight: 500;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: "AUTHENTICSans-90", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
 }
 
 button.button-header-link:hover {
-	border-bottom: 3px #3432FF solid;
-	transition: border-bottom .3s ease-in-out;
-
+  display: block;
+  position: relative;
+  border-bottom: 3px #3432ff solid;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
 }
 
-
 nav.header-menu {
-	display: flex;
-	width: 57vw;
-	height: auto;
-	align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 57vw;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 ul.header-buttons li {
-	height: 32px;
-	width: 88px;
-	padding: 0px 0px 0 30px;
+  height: 32px;
+  width: 88px;
+  padding: 0px 0px 0 30px;
 }
 
 ul.header-buttons li.space-light-button {
-	padding-left: 15px;
+  padding-left: 15px;
 }
 
 ul.header-buttons li a {
-	padding: 8px 30px 8px 8px;
-	margin: 0 0 0px 0px;
-	display: flex;
-	text-decoration: none;
-	cursor: pointer;
-	transition: 0.3s;
-	transition-timing-function: ease-out;
+  padding: 8px 30px 8px 8px;
+  margin: 0 0 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
 }
 
 ul.header-buttons li a:hover {
-	box-shadow: rgb(230, 221, 248) 5px 5px 0px 0px;
+  -webkit-box-shadow: #e6ddf8 5px 5px 0px 0px;
+          box-shadow: #e6ddf8 5px 5px 0px 0px;
 }
 
 ul.header-buttons li a.header-button-dark {
-	background-color: #3432ff;
-	color: #ffffff;
+  background-color: #3432ff;
+  color: #ffffff;
 }
 
 ul.header-buttons li a.header-button-dark:hover {
-	background-color: #3432ff;
-	color: #ffffff;
-	background-color: rgb(14, 14, 118);
+  background-color: #3432ff;
+  color: #ffffff;
+  background-color: #0e0e76;
 }
 
 ul.header-buttons li a.header-button-light {
-	background-color: white;
-	color: rgb(51, 51, 255);
-	width: 83px;
-	border: 1px solid;
-	padding: 8px 30px 8px 8px;
+  background-color: white;
+  color: #3333ff;
+  width: 83px;
+  border: 1px solid;
+  padding: 8px 30px 8px 8px;
 }
 
 ul.header-buttons li a.header-button-light:hover {
-	color: rgb(14, 14, 118);
+  color: #0e0e76;
 }
 
 div ul.header-buttons li a span {
-	padding: 8 8px 8px 8px;
-	margin: 0 0 0px 0px;
-	font-family: SometypeMono-Medium, Monaco, Inconsolata, "Fira Mono",
-		"Droid Sans Mono", "Source Code Pro", monospace, monospace;
-	font-size: 11px;
-	font-weight: 600;
+  padding: 8 8px 8px 8px;
+  margin: 0 0 0px 0px;
+  font-family: SometypeMono-Medium, Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace, monospace;
+  font-size: 11px;
+  font-weight: 600;
 }
 
 div.container-header-buttons ul {
-	display: flex;
-	height: 32px;
-	align-items: center;
-	justify-content: space-between;
-	flex-wrap: nowrap;
-	list-style: none;
-	padding: 0 0 0 0px;
-	margin: 0 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  list-style: none;
+  padding: 0 0 0 0px;
+  margin: 0 0 0 0;
 }
 
 div.container-header-buttons {
-	display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /* ul.header-buttons {
 } */
-
 div.hero-heading {
-	margin-bottom: 64px;
+  margin-bottom: 64px;
 }
 
 div.hero-heading h2 {
-	font-size: 56px;
-	font-family: AUTHENTICSans-90, system-ui, -apple-system, BlinkMacSystemFont,
-		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
-		"Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
-	margin: 0 0 0 0;
+  font-size: 56px;
+  font-family: AUTHENTICSans-90, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+  margin: 0 0 0 0;
 }
 
 div.hero-heading strong {
-	font-size: 56px;
-	font-family: AUTHENTICSans-90, system-ui, -apple-system, BlinkMacSystemFont,
-		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
-		"Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
-	font-weight: normal;
-	line-height: 68px;
+  font-size: 56px;
+  font-family: AUTHENTICSans-90, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+  font-weight: normal;
+  line-height: 68px;
 }
 
 section.hero-content {
-	box-sizing: border-box;
-	display: flex;
-	flex-direction: column;
-	height: 204px;
-	width: 607.5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 204px;
+  width: 607.5px;
 }
 
 div.hero-heading2 h2 {
-	font-size: 24px;
-	font-family: AUTHENTICSans-60, system-ui, -apple-system, BlinkMacSystemFont,
-		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
-		"Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
-	font-weight: 300;
-	margin-bottom: 40px;
+  font-size: 24px;
+  font-family: AUTHENTICSans-60, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+  font-weight: 300;
+  margin-bottom: 40px;
 }
 
 ul.hero-content-list {
-	list-style: none;
-	display: flex;
-	flex-direction: row;
-	justify-content: left;
-	padding: 0 0 0 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding: 0 0 0 0;
 }
 
 ul.hero-content-list > li {
-	margin-right: 32px;
+  margin-right: 32px;
 }
 
 a.default-button-dark {
-	text-decoration: none;
-	background-color: #33f;
-	color: #fff;
-	font-family: SometypeMono-Medium, Monaco, Inconsolata, "Fira Mono",
-		"Droid Sans Mono", "Source Code Pro", monospace, monospace;
-	padding: 16px 54px 16px 16px;
-	cursor: pointer;
-	display: inline-block;
-	transition: 0.3s;
+  text-decoration: none;
+  background-color: #33f;
+  color: #fff;
+  font-family: SometypeMono-Medium, Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace, monospace;
+  padding: 16px 54px 16px 16px;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 a.default-button-dark:hover {
-	background-color: #0e0e76;
-	box-shadow: rgb(230, 221, 248) 5px 5px 0px 0px;
+  background-color: #0e0e76;
+  -webkit-box-shadow: #e6ddf8 5px 5px 0px 0px;
+          box-shadow: #e6ddf8 5px 5px 0px 0px;
 }
 
 a.default-button-light {
-	text-decoration: none;
-	color: #33f;
-	border-color: #33f;
-	border: 1px solid;
-	padding: 16px 54px 13px 16px;
-	cursor: pointer;
-	display: inline-block;
-	transition: 0.3s;
+  text-decoration: none;
+  color: #33f;
+  border-color: #33f;
+  border: 1px solid;
+  padding: 16px 54px 13px 16px;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 a.default-button-light:hover {
-	color: #0e0e76;
-	box-shadow: rgb(230, 221, 248) 5px 5px 0px 0px;
+  color: #0e0e76;
+  -webkit-box-shadow: #e6ddf8 5px 5px 0px 0px;
+          box-shadow: #e6ddf8 5px 5px 0px 0px;
 }
 
 .default-button-light > span {
-	font-family: SometypeMono-Medium, Monaco, Inconsolata, "Fira Mono",
-		"Droid Sans Mono", "Source Code Pro", monospace, monospace;
+  font-family: SometypeMono-Medium, Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace, monospace;
 }
 
 .default-button-dark > span {
-	font-family: SometypeMono-Medium, Monaco, Inconsolata, "Fira Mono",
-		"Droid Sans Mono", "Source Code Pro", monospace, monospace;
+  font-family: SometypeMono-Medium, Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace, monospace;
 }
 
 .default-button-light p {
-	margin: 5px 0 0px 0;
+  margin: 5px 0 0px 0;
 }
 
 /* Cor roxo escuro : #0e0e76 */
-
 .default-button-dark p {
-	margin: 4px 0 0 0;
+  margin: 4px 0 0 0;
 }
 
 div.hero-content-bottom {
-	display: block;
-	box-sizing: border-box;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 div.container {
-	padding: 0px 64px;
+  padding: 0px 64px;
 }
 
 section.logos {
-	margin: 160px 0 0 0;
+  margin: 160px 0 0 0;
 }
 
 div.layout-logos {
-	margin-top: 100px;
+  margin-top: 100px;
 }
 
 div.layout-logos-header-container {
-	text-align: center;
-	margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
 }
 
 div.header-logos h2 {
-	font-size: 40px;
-	line-height: 48px;
-	font-style: normal;
-	font-weight: normal;
+  font-size: 40px;
+  line-height: 48px;
+  font-style: normal;
+  font-weight: normal;
 }
 
 ul.logos-container {
-	list-style: none;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	margin: 0 195px;
-	padding: 0 0px 0 0px;
-	justify-content: center;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 195px;
+  padding: 0 0px 0 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 li.logo-item {
-	margin: 1.7777777778rem;
+  margin: 1.7777777778rem;
 }
 
 img.logo__icon {
-	margin: 0 auto;
-	object-fit: contain;
-	width: 100%;
-	width: 162px;
-	height: 45px;
+  margin: 0 auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  width: 162px;
+  height: 45px;
 }
 
 div.layout-container-header-foursquare-solutions {
-	display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 div.foursquare-solutions-header-content {
-	max-width: 983px;
+  max-width: 983px;
 }
 
 .section-caption {
-	font-family: SometypeMono-Regular, Monaco, Inconsolata, "Fira Mono",
-		"Droid Sans Mono", "Source Code Pro", monospace, monospace;
-	font-weight: normal;
-	line-height: 24px;
-	margin: 0 0 32px 0;
+  font-family: SometypeMono-Regular, Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace, monospace;
+  font-weight: normal;
+  line-height: 24px;
+  margin: 0 0 32px 0;
 }
 
 div.foursquare-solutions-header-heading {
-	font-size: 3.1111111111rem;
-	letter-spacing: -0.02em;
-	line-height: 3.7777777778rem;
+  font-size: 3.1111111111rem;
+  letter-spacing: -0.02em;
+  line-height: 3.7777777778rem;
 }
 
 div.foursquare-solutions-header-heading h2 {
-	font-family: AUTHENTICSans-60, system-ui, -apple-system, BlinkMacSystemFont,
-		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
-		"Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
-	font-weight: 300;
-	max-height: 983px;
-	font-size: 56px;
+  font-family: AUTHENTICSans-60, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+  font-weight: 300;
+  max-height: 983px;
+  font-size: 56px;
 }
 
 section.header-foursquare-solutions {
-	margin: 160px 0 64px 0;
+  margin: 160px 0 64px 0;
 }
 
 div.layout-container-foursquare-solutions {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	height: 100%;
-	width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  width: 100%;
 }
 
 section.stacked {
-	display: flex;
-	flex-direction: row;
-	margin: 0 0;
-	position: relative;
-	height: 100%;
-	width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 0;
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 
 div.stacked-layout {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: reverse;
-	width: 100%;
-	height: 100%;
-	margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: reverse;
+          flex-direction: reverse;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 100px;
 }
 
 div.stacked-layout2 {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row-reverse;
-	justify-content: space-between;
-	width: 100%;
-	height: 100%;
-	margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
 }
 
 div.img-stacked {
-	flex: flex;
-	flex-wrap: wrap;
-	width: 608px;
-	height: 571px;
-	min-height: 374px;
-	min-width: 554px;
+  -webkit-box-flex: flex;
+      -ms-flex: flex;
+          flex: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 608px;
+  height: 571px;
+  min-height: 374px;
+  min-width: 554px;
 }
 
 div.img-stacked picture img {
-	object-position: center;
-	object-fit: cover;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
-	position: relative;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: relative;
 }
 
 article.text-block-stacked1 {
-	max-width: 500px;
-	height: 443px;
-	padding: 64px 0px;
-	margin-left: 100px;
-	z-index: 0;
+  max-width: 500px;
+  height: 443px;
+  padding: 64px 0px;
+  margin-left: 100px;
+  z-index: 0;
 }
 
 article.text-block-stacked2 {
-	max-width: 500px;
-	height: 443px;
-	padding: 64px 0px;
-	z-index: 0;
+  max-width: 500px;
+  height: 443px;
+  padding: 64px 0px;
+  z-index: 0;
 }
 
 div.text-block-heading > h3 {
-	display: block;
-	font-size: 40px;
-	font-family: AUTHENTICSans-60, system-ui, -apple-system, BlinkMacSystemFont,
-		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
-		"Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
-	font-weight: 300;
-	margin: 0;
+  display: block;
+  font-size: 40px;
+  font-family: AUTHENTICSans-60, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+  font-weight: 300;
+  margin: 0;
 }
 
 div.text-block-body {
-	display: block;
-	font-family: AUTHENTICSans-90, system-ui, -apple-system, BlinkMacSystemFont,
-		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
-		"Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
-	font-size: 16px;
-	line-height: 24px;
+  display: block;
+  font-family: AUTHENTICSans-90, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 ul.inline-list {
-	list-style: none;
-	display: flex;
-	width: 500px;
-	height: 51px;
-	margin: 24px 0 0 0;
-	padding-left: 0px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 500px;
+  height: 51px;
+  margin: 24px 0 0 0;
+  padding-left: 0px;
 }
 
 ul.inline-list > li {
-	margin-right: 32px;
+  margin-right: 32px;
 }
 
 a.link_text {
-	color: rgb(51, 51, 255);
-	font-family: SometypeMono-Medium, Monaco, Inconsolata, "Fira Mono",
-		"Droid Sans Mono", "Source Code Pro", monospace, monospace;
-	text-decoration: none;
-	height: 50px;
-	width: 100px;
-	transition: 0.3s;
+  color: #3333ff;
+  font-family: SometypeMono-Medium, Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace, monospace;
+  text-decoration: none;
+  height: 50px;
+  width: 100px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 a.link_text:hover {
-	color: #0e0d76;
-	font-family: SometypeMono-Medium, Monaco, Inconsolata, "Fira Mono",
-		"Droid Sans Mono", "Source Code Pro", monospace, monospace;
+  color: #0e0d76;
+  font-family: SometypeMono-Medium, Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace, monospace;
 }
 
 section.foursquare-solutions {
-	height: 100%;
-	width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 section.caixa-azul {
-	margin-top: 250px;
+  margin-top: 250px;
 }
 
 div.layout-caixa-azul {
-	background-color: #3333ff;
-	padding: 32px;
+  background-color: #3333ff;
+  padding: 32px;
 }
 
 div.heading-caixa-azul > h2 {
-	color: #fff;
-	font-family: AUTHENTICSans-60, system-ui, -apple-system, BlinkMacSystemFont,
-		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
-		"Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
-	font-size: 40px;
-	font-weight: 300;
-	box-sizing: border-box;
-	margin: 0;
-	max-width: 850.25px;
-	max-height: 94px;
+  color: #fff;
+  font-family: AUTHENTICSans-60, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  max-width: 850.25px;
+  max-height: 94px;
 }
 
 a.default-button {
-	text-decoration: none;
-	border: 0px solid;
-	padding: 16px 54px 13px 16px;
-	cursor: pointer;
-	display: inline-block;
-	transition: 0.3s;
+  text-decoration: none;
+  border: 0px solid;
+  padding: 16px 54px 13px 16px;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
+
 a.default-button:hover {
-	color: #0e0e76;
-	box-shadow: rgb(230, 221, 248) 5px 5px 0px 0px;
+  color: #0e0e76;
+  -webkit-box-shadow: #e6ddf8 5px 5px 0px 0px;
+          box-shadow: #e6ddf8 5px 5px 0px 0px;
 }
 
 .default-button > span {
-	font-family: SometypeMono-Medium, Monaco, Inconsolata, "Fira Mono",
-		"Droid Sans Mono", "Source Code Pro", monospace, monospace;
+  font-family: SometypeMono-Medium, Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace, monospace;
 }
 
 ul.button-caixa-azul {
-	padding-left: 0px;
-	margin-top: 75px;
+  padding-left: 0px;
+  margin-top: 75px;
 }
 
 div.header-layout-after-caixa-azul {
-	margin-top: 160px;
+  margin-top: 160px;
 }
 
 div.header-container-after-caixa-azul {
-	max-width: 983px;
-	max-height: 136px;
+  max-width: 983px;
+  max-height: 136px;
 }
 
 div.header-container-after-caixa-azul > h2 {
-	font-size: 56px;
-	font-weight: 300;
+  font-size: 56px;
+  font-weight: 300;
 }
 
 section.carousel {
-	margin-top: 64px;
-	padding: 64px 0px 160px 0px;
-	background-color: rgb(250, 248, 248);
-
+  margin-top: 64px;
+  padding: 64px 0px 160px 0px;
+  background-color: #faf8f8;
 }
 
 div.places-layout {
-	display: flex;
-	flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 div.places-selector {
-	padding-left: 64px;
+  padding-left: 64px;
 }
 
 .places-select {
-	font-family: "AUTHENTICSans-90", system-ui, -apple-system, BlinkMacSystemFont,
-		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
-		"Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
-	font-weight: normal;
-	letter-spacing: -0.02em;
-	background-image: url(https://foursquare.com/static/img/select-arrow.png);
-	background-position: 100% 60%;
-	background-repeat: no-repeat;
-	background-size: 16px;
-	display: block;
-	min-width: auto;
-	-webkit-appearance: none;
-	height: 75px;
-	font-size: 56px;
-	border-bottom-color: rgb(51, 51, 255);
-	border-bottom-width: 5px;
-	border-top-width: 0px;
-	border-right-width: 0px;
-	border-left-width: 0px;
-	border-radius: 0px;
-	position: relative;
-	padding-right: 32px;
-	background-color: inherit;
+  font-family: "AUTHENTICSans-90", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+  font-weight: normal;
+  letter-spacing: -0.02em;
+  background-image: url(https://foursquare.com/static/img/select-arrow.png);
+  background-position: 100% 60%;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  display: block;
+  min-width: auto;
+  -webkit-appearance: none;
+  height: 75px;
+  font-size: 56px;
+  border-bottom-color: #3333ff;
+  border-bottom-width: 5px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-radius: 0px;
+  position: relative;
+  padding-right: 32px;
+  background-color: inherit;
 }
 
 .places-select:focus {
-	color: blue;
+  color: blue;
 }
 
 option {
-	font-size: 16px;
-	height: 16px;
+  font-size: 16px;
+  height: 16px;
 }
 
 button.button-default-black {
-	background-color: #171417;
-	color: #fff;
-	padding: 16px 54px 16px 16px;
-	font-size: 16px;
-	cursor: pointer;
-	border: 0;
-	box-sizing: border-box;
-	font-family: SometypeMono-Medium, Monaco, Inconsolata, "Fira Mono",
-		"Droid Sans Mono", "Source Code Pro", monospace, monospace;
-	transition: all 0.3s ease-out;
+  background-color: #171417;
+  color: #fff;
+  padding: 16px 54px 16px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: SometypeMono-Medium, Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace, monospace;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 button.button-default-black:hover {
-	background-color: #0e0d76;
-	box-shadow: rgb(230, 221, 248) 5px 5px 0px 0px;
+  background-color: #0e0d76;
+  -webkit-box-shadow: #e6ddf8 5px 5px 0px 0px;
+          box-shadow: #e6ddf8 5px 5px 0px 0px;
 }
 
 aside.app-call {
-	display: flex;
-	margin-top: 64px;
-	max-width: 512px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 64px;
+  max-width: 512px;
 }
 
 div.app-img {
-	margin-right: 24px;
+  margin-right: 24px;
 }
 
 div.app-img > img {
-	max-height: 110px;
-	max-width: 110px;
+  max-height: 110px;
+  max-width: 110px;
 }
 
 p.app-call-text {
-	display: block;
-	font-family: AUTHENTICSans-90, system-ui, -apple-system, BlinkMacSystemFont,
-		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
-		"Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
-	font-size: 24px;
-	margin: 35px 0 0 0;
-	line-height: 34px;
-	width: 355px;
+  display: block;
+  font-family: AUTHENTICSans-90, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+  font-size: 24px;
+  margin: 35px 0 0 0;
+  line-height: 34px;
+  width: 355px;
 }
 
 p.app-call-text > a {
-	color: #000;
-	border-bottom: 1px solid #33f;
-	text-decoration: none;
-	transition: 0.3s;
+  color: #000;
+  border-bottom: 1px solid #33f;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 p.app-call-text > a:hover {
-	color: #0e0d76;
-	border-bottom: 1px solid #0e0d76;
+  color: #0e0d76;
+  border-bottom: 1px solid #0e0d76;
 }
 
 div.places-list {
-	padding-top: 64px;
-	max-width: 864px;
+  padding-top: 64px;
+  max-width: 864px;
 }
 
 div.flickity-viewport {
-	height: 603px;
-	touch-action: pan-y;
-	position: relative;
+  height: 603px;
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+  position: relative;
 }
 
 div.flickity-slider {
-	left: 0px;
-	transform: translateX(0%);
-	display: flex;
-	height: 100%;
-	position: relative;
+  left: 0px;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  position: relative;
 }
 
 article.places-list-item {
-	left: 0%;
-	display: flex;
-	min-height: 100%;
-	padding: 0 16px;
+  left: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100%;
+  padding: 0 16px;
 }
 
 a.place {
-	color: inherit;
-	text-decoration: none;
-	display: flex;
-	flex-direction: column;
-	touch-action: manipulation;
-	cursor: auto;
-	padding: 24px;
-	background-color: #fff;
-	max-width: 227px;
-	max-height: 509px;
-	transition: 0.3s;
+  color: inherit;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: auto;
+  padding: 24px;
+  background-color: #fff;
+  max-width: 227px;
+  max-height: 509px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 a.place:hover {
-	color: #3432ff;
-	box-shadow: rgb(51, 51, 255) 5px 5px 0px 0px;
+  color: #3432ff;
+  -webkit-box-shadow: #3333ff 5px 5px 0px 0px;
+          box-shadow: #3333ff 5px 5px 0px 0px;
 }
 
 div.place-photo {
-	position: relative;
-	margin-bottom: 16px;
-	display: block;
-	object-fit: contain;
+  position: relative;
+  margin-bottom: 16px;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 div.place-photo > img {
-	display: block;
-	max-width: 100%;
-	object-fit: fill;
+  display: block;
+  max-width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 h3.place-heading {
-	font-family: AUTHENTICSans-60, system-ui, -apple-system, BlinkMacSystemFont,
-		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
-		"Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
-	display: block;
-	font-size: 24px;
-	font-weight: 300;
-	margin: 0 0 16px 0;
+  font-family: AUTHENTICSans-60, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+  display: block;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0 0 16px 0;
 }
 
 p.place-rating {
-	font-family: SometypeMono-Regular, Monaco, Inconsolata, "Fira Mono",
-		"Droid Sans Mono", "Source Code Pro", monospace, monospace;
-	font-size: 0.7222222222rem;
-	line-height: 1rem;
-	background-color: #cbb8f7;
-	color: #787577;
-	position: absolute;
-	right: 0;
-	top: 0;
-	margin: 0;
-	padding: 0.4011428571em 0.9571428571em;
-	height: 33px;
-	width: 84px;
-	line-height: 23px;
-	box-sizing: border-box;
+  font-family: SometypeMono-Regular, Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace, monospace;
+  font-size: 0.7222222222rem;
+  line-height: 1rem;
+  background-color: #cbb8f7;
+  color: #787577;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+  padding: 0.4011428571em 0.9571428571em;
+  height: 33px;
+  width: 84px;
+  line-height: 23px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 p.place-rating > span {
-	color: #000;
+  color: #000;
 }
 
 p.place-location {
-	font-family: SometypeMono-Medium, Monaco, Inconsolata, "Fira Mono",
-		"Droid Sans Mono", "Source Code Pro", monospace, monospace;
-	align-items: center;
-	margin: 0 0 24px 0;
-	font-size: 16px;
+  font-family: SometypeMono-Medium, Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace, monospace;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 24px 0;
+  font-size: 16px;
 }
 
 p.place-tip {
-	margin: 183px 0 0 0;
+  margin: 183px 0 0 0;
 }
 
 .flickity-button {
-	background-color: transparent;
-	color: #33f;
-	padding: 16px 8px;
-	position: absolute;
-	top: -64px;
-	display: inline-block;
-	border: 0px;
-	font-size: 20px;
-	font-weight: 200;
-	transition: 0.3s;
-	cursor: pointer;
+  background-color: transparent;
+  color: #33f;
+  padding: 16px 8px;
+  position: absolute;
+  top: -64px;
+  display: inline-block;
+  border: 0px;
+  font-size: 20px;
+  font-weight: 200;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .flickity-button:hover {
-	color: #0e0d76;
+  color: #0e0d76;
 }
 
 .flickity-previous {
-	right: 5.6666666667rem;
+  right: 5.6666666667rem;
 }
 
 .flickity-after {
-	right: 1.6666666667rem;
+  right: 1.6666666667rem;
 }
 
 div.superfeature-img > picture img {
-	object-fit: fill;
-	max-width: 100%;
-	max-height: 100%;
-	display: absolute;
-	max-height: 781px;
-	width: 1450px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  max-width: 100%;
+  max-height: 100%;
+  display: absolute;
+  max-height: 781px;
+  width: 1450px;
 }
 
 section.superfeature {
-	position: relative;
+  position: relative;
 }
 
 div.superfeature-content {
-	background-color: #171417;
-	position: absolute;
-	top: 31%;
-	padding: 24px 32px 64px 96px;
-	max-width: 725px;
-	max-height: 184px;
+  background-color: #171417;
+  position: absolute;
+  top: 31%;
+  padding: 24px 32px 64px 96px;
+  max-width: 725px;
+  max-height: 184px;
 }
 
 p.superfeature-caption {
-	color: #fff;
-	margin-bottom: 16px;
+  color: #fff;
+  margin-bottom: 16px;
 }
 
 a.superfeature-link > h2 {
-	box-shadow: inset 0 -15px 0 0 #33f;
-	display: inline;
-	line-height: 1.3;
-	font-size: 57px;
-	color: #fff;
-	font-weight: 500;
-	transition: box-shadow 0.2s ease-in;
-	transition: 0.2s ease-in;
+  -webkit-box-shadow: inset 0 -15px 0 0 #33f;
+          box-shadow: inset 0 -15px 0 0 #33f;
+  display: inline;
+  line-height: 1.3;
+  font-size: 57px;
+  color: #fff;
+  font-weight: 500;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in;
+  transition: -webkit-box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in, -webkit-box-shadow 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
 }
 
 a.superfeature-link {
-	text-decoration: none;
-	width: 724px;
-	height: 144px;
+  text-decoration: none;
+  width: 724px;
+  height: 144px;
 }
 
 a.superfeature-link:hover {
-	text-decoration: none;
-	box-shadow: inset 0 -15px 0px 0px #33f;
-	transition: box-shadow 0.2s ease-in;
-	border-width: 200px;
+  text-decoration: none;
+  -webkit-box-shadow: inset 0 -15px 0px 0px #33f;
+          box-shadow: inset 0 -15px 0px 0px #33f;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in;
+  transition: -webkit-box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in, -webkit-box-shadow 0.2s ease-in;
+  border-width: 200px;
 }
 
 section.learn-more {
-	margin-top: 150px;
+  margin-top: 150px;
 }
 
 section.learn-more h2 {
-	font-family: AUTHENTICSans-60, system-ui, -apple-system, BlinkMacSystemFont,
-		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
-		"Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
-	font-size: 40px;
-	margin-top: 0px;
-	font-weight: 300;
+  font-family: AUTHENTICSans-60, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+  font-size: 40px;
+  margin-top: 0px;
+  font-weight: 300;
 }
