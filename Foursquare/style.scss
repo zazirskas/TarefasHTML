@@ -130,13 +130,12 @@ a.flex-link {
 	padding-left: 40px;
 	color: #000;
 	margin-bottom: 20px;
-	
 
 	&:hover {
 		color: #3432ff;
 		transition: color 0.2s ease-in-out;
 		border-left: #3432ff 2px solid;
-		transition: border-left .2s;
+		transition: border-left 0.2s;
 	}
 
 	i {

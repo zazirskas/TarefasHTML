@@ -168,8 +168,8 @@ a.flex-link:hover {
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
   border-left: #3432ff 2px solid;
-  -webkit-transition: border-left .2s;
-  transition: border-left .2s;
+  -webkit-transition: border-left 0.2s;
+  transition: border-left 0.2s;
 }
 
 a.flex-link i {
