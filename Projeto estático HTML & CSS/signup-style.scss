@@ -1,0 +1,173 @@
+html {
+	height: 100vh;
+	width: 100vw;
+}
+
+section.signup-form {
+	display: flex;
+	justify-content: center;
+	margin: 120px 10% 0 10%;
+	align-self: center;
+
+	div.form-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		z-index: 11;
+		background-color: #fff;
+		height: 600px;
+		width: 500px;
+		box-shadow: 0px 0 50px rgba(0, 0, 0, 0.5);
+		border-radius: 5px;
+		border: 2px solid #561efc;
+
+		h1 {
+			justify-self: center;
+			font-family: "DotGothic16", sans-serif;
+			text-align: center;
+			width: 100px;
+			border-bottom: 3px solid black;
+		}
+	}
+}
+
+form.sign-up {
+	display: block;
+	width: 90%;
+
+	input {
+		border: 1px solid #561efc;
+		padding-left: 10px;
+		border-radius: 10px;
+		margin-top: 10px;
+		height: 40px;
+		font-size: 20px;
+	}
+
+	div.user-real-name {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		justify-content: space-around;
+
+		label {
+			font-family: "Inconsolata", monospace;
+			margin-top: 10px;
+		}
+	}
+
+	div.password {
+		margin: 10px 0px;
+		display: flex;
+		justify-content: space-between;
+
+		label {
+			font-family: "Inconsolata", monospace;
+		}
+
+		input {
+			width: 200px;
+		}
+
+		div.field-block {
+			display: flex;
+			flex-direction: column;
+			align-content: flex-start;
+		}
+	}
+
+	div.genero {
+		display: flex;
+		margin-top: 20px;
+		flex-direction: column;
+		align-items: center;
+
+		div {
+			display: flex;
+			margin: 0px 0px 0px 0px;
+			justify-content: center;
+		}
+
+		label {
+			margin: 10px 0 0 0px;
+			font-family: "Inconsolata", monospace;
+		}
+
+		span.radio-name {
+			margin-right: 30px;
+			display: flex;
+			align-items: center;
+			font-family: "Inconsolata", monospace;
+		}
+		input {
+			margin: 0 10px 0 0px;
+		}
+	}
+
+	div.sign-button-container {
+		display: flex;
+		margin-top: 20px;
+		justify-content: center;
+
+		button {
+			width: 40%;
+			white-space: nowrap;
+			font-family: "Inconsolata", monospace;
+			text-decoration: none;
+			background-color: #561efc;
+			color: #e4ff1a;
+			border-radius: 4px;
+			padding: 7px;
+			font-size: 1rem;
+			letter-spacing: 1.25px;
+			box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.7);
+
+			&:active {
+				box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+				transform: translate(0px, 5px);
+				transition: transform 0.2s, box-shadow 0.1s;
+			}
+		}
+	}
+}
+
+@media (min-height: 1000px) {
+	footer {
+		position: absolute;
+		bottom: 0px;
+	}
+}
+
+@media (max-width: 500px) {
+	section.signup-form {
+		div.form-container {
+      z-index: 1;
+			width: 90vw;
+
+      div.field-block{
+        
+        &:first-child{
+          margin-bottom: 10px;
+        }
+      }
+
+      div.password{
+        display: flex;
+        flex-direction: column;
+      }
+			div.genero {
+        span{
+          margin: 10px;
+        }
+			}
+      label{
+        white-space: nowrap;
+      } 
+
+			input {
+				width: 100%;
+			}
+		}
+	}
+}

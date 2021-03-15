@@ -1,0 +1,226 @@
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+section.signup-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 120px 10% 0 10%;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+section.signup-form div.form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 11;
+  background-color: #fff;
+  height: 600px;
+  width: 500px;
+  -webkit-box-shadow: 0px 0 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0 50px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  border: 2px solid #561efc;
+}
+
+section.signup-form div.form-container h1 {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-family: "DotGothic16", sans-serif;
+  text-align: center;
+  width: 100px;
+  border-bottom: 3px solid black;
+}
+
+form.sign-up {
+  display: block;
+  width: 90%;
+}
+
+form.sign-up input {
+  border: 1px solid #561efc;
+  padding-left: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  height: 40px;
+  font-size: 20px;
+}
+
+form.sign-up div.user-real-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+form.sign-up div.user-real-name label {
+  font-family: "Inconsolata", monospace;
+  margin-top: 10px;
+}
+
+form.sign-up div.password {
+  margin: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+form.sign-up div.password label {
+  font-family: "Inconsolata", monospace;
+}
+
+form.sign-up div.password input {
+  width: 200px;
+}
+
+form.sign-up div.password div.field-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+form.sign-up div.genero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form.sign-up div.genero div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 0px 0px 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+form.sign-up div.genero label {
+  margin: 10px 0 0 0px;
+  font-family: "Inconsolata", monospace;
+}
+
+form.sign-up div.genero span.radio-name {
+  margin-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Inconsolata", monospace;
+}
+
+form.sign-up div.genero input {
+  margin: 0 10px 0 0px;
+}
+
+form.sign-up div.sign-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+form.sign-up div.sign-button-container button {
+  width: 40%;
+  white-space: nowrap;
+  font-family: "Inconsolata", monospace;
+  text-decoration: none;
+  background-color: #561efc;
+  color: #e4ff1a;
+  border-radius: 4px;
+  padding: 7px;
+  font-size: 1rem;
+  letter-spacing: 1.25px;
+  -webkit-box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
+form.sign-up div.sign-button-container button:active {
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  -webkit-transform: translate(0px, 5px);
+          transform: translate(0px, 5px);
+  -webkit-transition: -webkit-transform 0.2s, -webkit-box-shadow 0.1s;
+  transition: -webkit-transform 0.2s, -webkit-box-shadow 0.1s;
+  transition: transform 0.2s, box-shadow 0.1s;
+  transition: transform 0.2s, box-shadow 0.1s, -webkit-transform 0.2s, -webkit-box-shadow 0.1s;
+}
+
+@media (min-height: 1000px) {
+  footer {
+    position: absolute;
+    bottom: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  section.signup-form div.form-container {
+    z-index: 1;
+    width: 90vw;
+  }
+  section.signup-form div.form-container div.field-block:first-child {
+    margin-bottom: 10px;
+  }
+  section.signup-form div.form-container div.password {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.signup-form div.form-container div.genero span {
+    margin: 10px;
+  }
+  section.signup-form div.form-container label {
+    white-space: nowrap;
+  }
+  section.signup-form div.form-container input {
+    width: 100%;
+  }
+}
